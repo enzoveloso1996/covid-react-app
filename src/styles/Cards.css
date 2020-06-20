@@ -81,7 +81,15 @@
   100% { transform: rotate(360deg); }
 }
 
-@media (min-width: 1280px) and (max-width: 1440px){
+@media (max-width: 1200px) {
+    .cards {
+        display: grid;
+        grid-template-areas: 
+            'first second'
+            'third fourth';
+        grid-gap: 20px;
+    }
+
     .loader {
         border: 16px solid #f3f3f3;
         border-radius: 50%;
@@ -93,10 +101,13 @@
         height: 100px;
         -webkit-animation: spin 2s linear infinite; 
         animation: spin 2s linear infinite;
+
+        display: grid;
     }
+
 }
 
-@media (min-width: 786px) and (max-width: 800px){
+@media (max-width: 900px) {
     .cards {
         display: grid;
         grid-template-areas: 
@@ -122,7 +133,59 @@
 
 }
 
-@media (max-width: 500px) and (min-width: 320px) {
+@media (max-width: 800px) {
+    .cards {
+        display: grid;
+        grid-template-areas: 
+            'first second'
+            'third fourth';
+        grid-gap: 10px;
+    }
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #459296;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; 
+        animation: spin 2s linear infinite;
+
+        display: grid;
+    }
+
+}
+
+@media (max-width: 786px) {
+    .cards {
+        display: grid;
+        grid-template-areas: 
+            'first second'
+            'third fourth';
+        grid-gap: 10px;
+    }
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #459296;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; 
+        animation: spin 2s linear infinite;
+
+        display: grid;
+    }
+
+}
+
+@media (max-width: 620px) {
     .cards {
         display: grid;
         grid-template-areas: 
@@ -148,4 +211,59 @@
         display: grid;
     }
 
+}
+
+@media (max-width: 500px) {
+    .cards {
+        display: grid;
+        grid-template-areas: 
+            'first'
+            'second' 
+            'third'
+            'fourth';
+        grid-gap: 10px;
+    }
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #459296;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; 
+        animation: spin 2s linear infinite;
+
+        display: grid;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .cards {
+        display: grid;
+        grid-template-areas: 
+            'first'
+            'second' 
+            'third'
+            'fourth';
+        grid-gap: 10px;
+    }
+
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #459296;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite; 
+        animation: spin 2s linear infinite;
+
+        display: grid;
+    }
 }

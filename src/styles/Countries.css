@@ -127,7 +127,7 @@
 @media (min-width: 768px) {
   .countries > .list {
     width: 680px;
-    height: 800px;
+    height: 555px;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -136,7 +136,8 @@
   }
 }
 
-@media (max-width: 500px) and (min-width: 320px) {
+
+@media (max-width: 670px) {
   .countries {
     margin-top: 20px;
     background-color: #68C6BD;
@@ -169,7 +170,106 @@
   .countries > .list {
     margin-bottom: 20px;
     width: 300px;
-    height: 900px;
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: grid;
+    justify-items: center;
+  }
+  .card {
+    margin-top: 5px;
+    width: 300px;
+    height: 180px;
+    background-color: #CEF5F1;
+    
+
+    display: grid;
+    grid-template-areas:
+      'country'
+      'column1'
+      'column2';
+    justify-items: start;
+    row-gap: 20px;
+  }
+  
+  .card > .country {
+    grid-area: country;
+    color: #E85F5F;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 800px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  }
+
+  .column-1 {
+    grid-area: column1;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #1F8D81;
+  }
+
+  .column-1 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .column-2 {
+    grid-area: column2;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #1F8D81;
+  }
+
+  .column-2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 670px) and (max-width: 500px) and (min-width: 320px) {
+  .countries {
+    margin-top: 20px;
+    background-color: #68C6BD;
+
+    display: grid;
+    justify-items: center;
+  }
+
+  .search-bar {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 70px;
+    background-color: #459296;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px 1px #68C6BD;
+    display: grid;
+    place-items: center;
+  }
+
+  .search-bar > input {
+    font-size: 20px;
+    padding-left: 10px;
+    color: #459296;
+    width: 270px;
+    height: 40px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .countries > .list {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 600px;
     overflow-y: auto;
     overflow-x: hidden;
 

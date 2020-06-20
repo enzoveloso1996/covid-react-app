@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Local from './components/Local'
 import Global from './components/Global'
 import Countries from './components/Countries'
+import Info from './components/Info'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
               <Route path="/global" exact component={Global}>
               </Route>
               <Route path="/countries" exact component={Countries}>
+              </Route>
+              <Route path="/info" exact component={Info}>
               </Route>
             </Switch>
           </main>
