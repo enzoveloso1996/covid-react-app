@@ -1,0 +1,22 @@
+:root {
+  --background: #68C6BD;
+  --dark: #459296;
+}
+
+.App {
+  height: 100vh;
+  background-color: var(--background);
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (max-width: 360px) and (min-width: 320px) {
+  .App {
+    height: 100vh;
+    background-color: var(--background);
+
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+  }
+}
