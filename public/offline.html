@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+     <meta name="viewport" content="width=device-width, user-scalable=no"> 
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Simple covid tracker react app"
+    />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Covid-19 App PH</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+      .main {
+          height: 100vh;
+          display: grid;
+          place-items: center;
+          background-color: #459296;
+      }
+      .main-box {
+          height: 500px;
+          width: 700px;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 2px 2px 25px 0 black;
+          display: grid;
+          place-items: center;
+          color: #1F8D81;
+      }
+      @media (max-width: 742px) {
+          .main-box {
+            height: 500px;
+            width: 600px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px 0 black;
+            display: grid;
+            place-items: center;
+            color: #1F8D81;
+        }
+      }
+      @media (max-width: 620px) {
+          .main-box {
+            height: 500px;
+            width: 500px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px 0 black;
+            display: grid;
+            place-items: center;
+            color: #1F8D81;
+        }
+      }
+
+      @media (max-width: 530px) {
+          .main-box {
+            height: 500px;
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px 0 black;
+            display: grid;
+            place-items: center;
+            color: #1F8D81;
+        }
+        .main-box > img {
+            width: 400px!important;
+            height: 380px!important;
+        }
+      }
+      @media (max-width: 425px) {
+          .main-box {
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 25px 0 black;
+            display: grid;
+            place-items: center;
+            color: #1F8D81;
+        }
+        .main-box > img {
+            width: 270px!important;
+            height: 350px!important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <div class="main-box">
+            <img src="./images/offline.png" width="500px" height="400px"/>
+            <h3>Please search for connection</h3>
+        </div>
+    </div>
+  </body>
+</html>

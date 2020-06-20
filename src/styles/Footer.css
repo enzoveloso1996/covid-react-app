@@ -8,3 +8,12 @@ p {
     margin: auto;
     color: #ffffff;
 }
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
