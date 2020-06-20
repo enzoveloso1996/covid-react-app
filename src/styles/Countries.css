@@ -28,6 +28,7 @@
 }
 
 .countries > .list {
+  margin-bottom: 10px;
   width: 680px;
   height: 550px;
   overflow-y: auto;
