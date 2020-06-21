@@ -125,7 +125,7 @@
   justify-self: end;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .countries > .list {
     width: 680px;
     height: 800px;
@@ -222,6 +222,7 @@
   }
 
   .column-2 {
+    display: none;
     grid-area: column2;
     font-size: 19px;
     font-weight: bold;
@@ -230,9 +231,7 @@
   }
 
   .column-2 > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
   }
 }
 
@@ -321,6 +320,7 @@
   }
 
   .column-2 {
+    display: none;
     grid-area: column2;
     font-size: 19px;
     font-weight: bold;
@@ -329,7 +329,7 @@
   }
 
   .column-2 > div {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
   }
