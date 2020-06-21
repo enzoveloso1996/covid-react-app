@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <Navbar className="footer">
             <Nav className="mx-auto">
-                <p>Made by Lorenzo Veloso 2020, Data by <a href="https://disease.sh/docs/">NovelCOVID API</a></p>
+                <p>Made by Lorenzo Veloso ☕️, Data by <a href="https://disease.sh/docs/">NovelCOVID API</a></p>
             </Nav>
         </Navbar>
     )

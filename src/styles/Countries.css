@@ -128,7 +128,7 @@
 @media (min-width: 768px) {
   .countries > .list {
     width: 680px;
-    height: 555px;
+    height: 800px;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -334,3 +334,4 @@
     justify-content: space-between;
   }
 }
+
