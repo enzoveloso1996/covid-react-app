@@ -8,7 +8,7 @@
     font-size: 22px;
 }
 
-/* .navbar-brand {
+.navbar-brand {
     animation-name: spin;
     animation-duration: 6000ms;
     animation-iteration-count: infinite;
@@ -23,4 +23,4 @@
     to {
         transform: rotate(360deg);
     }
-} */
+}
