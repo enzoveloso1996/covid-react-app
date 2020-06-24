@@ -1,0 +1,46 @@
+
+.carousel {
+    height: 460px;
+    width: 900px;
+}
+
+.carousel-item {
+    height: 500px;
+    width: 900px;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 360px;
+        width: 700px;
+    }
+
+    .carousel-item {
+        height: 500px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 680px) {
+    .carousel {
+        height: 260px;
+        width: 500px;
+    }
+
+    .carousel-item {
+        height: 300px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 414px) {
+    .carousel {
+        height: 170px;
+        width: 300px;
+    }
+
+    .carousel-item {
+        height: 500px;
+        width: 300px;
+    }
+}
