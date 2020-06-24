@@ -46,10 +46,6 @@
     text-align: center;
 }
 
-/* .switch-toggle > input:checked+label:last-of-type {
-    padding: 5px 5px 5px 5px;
-} */
-
 .switch-toggle > label {
     display: inline-block;
     padding: 5px 5px 5px 5px;
