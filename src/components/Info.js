@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
-import { Badge } from 'react-bootstrap'
+import { Badge } from 'react-bootstrap';
+import Aos from 'aos';
+
 
 //styles
 import '../styles/Info.css';
+import "aos/dist/aos.css";
 
 //components
 import Myths from './Myths';
 
 const Info = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
+
     return (
         <div className="info">
 
@@ -34,10 +41,10 @@ const Info = () => {
 
             <span className="header">Myth busters</span>
             <Badge pill variant="info">Source: World Health Organization</Badge>
-            <Myths />
+            <Myths data-aos="fade-right" data-aos-duration="4000"/>
 
             <span className="header">Latest news</span>
-            <section className="latest">
+            <section className="latest" data-aos="fade-right" data-aos-duration="4000" data-aos-offset="200">
                 <div classNam="t-1">
                     <TwitterTimelineEmbed 
                         sourceType="profile"
